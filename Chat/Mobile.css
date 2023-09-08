@@ -1,0 +1,335 @@
+@media screen and (max-aspect-ratio: 3/4) and (min-resolution: 240dpi), (max-aspect-ratio: 3/4) and (max-width: 1080px) and (min-resolution: 200dpi), (max-aspect-ratio: 3/4) and (max-width: 720px) and (min-resolution: 150dpi), (max-width: 480px) {
+    /**
+     * @section    Chat layout redesign
+     * @element    .ChatWindow
+     */
+    .ChatWindow {
+        background: transparent;
+        width: 100%;
+    }
+    .ChatWindow .Chat,
+    .ChatWindow .Rail {
+        margin-top: 40px;
+    }
+    .ChatWindow #ChatHeader {
+        display: none;
+    }
+    .ChatWindow #WikiaPage {
+        border: none;
+        border-radius: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    /**
+     * @section    Chat message pane redesign
+     * @element    .Chat
+     */
+    .ChatWindow .Chat {
+        overflow-x: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
+    .ChatWindow .Chat .avatar {
+        box-sizing: border-box;
+        left: 6px;
+        top: 6px;
+    }
+    .ChatWindow .Chat li:not(.continued) .username {
+        display: inline;
+    }
+    .ChatWindow .Chat li:not(.continued) .message {
+        display: block;
+    }
+    .ChatWindow .Chat li {
+        padding: 3px 8px 3px 44px;
+    }
+    .ChatWindow .Chat li:not(.continued) {
+        margin-bottom: 2px;
+    }
+    .ChatWindow .Chat li.continued {
+        margin-top: 10px;
+    }
+    .ChatWindow .Chat li.inline-alert {
+        padding: 10px;
+    }
+    /**
+     * @section    Chat rail modifications
+     * @element    .Rail
+     */
+    .ChatWindow .Rail {
+        background: inherit;
+        background: var(--mc-color-page);
+        height: 0;
+        overflow-x: hidden;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .ChatWindow .Rail:hover,
+    .ChatWindow .Rail.hovered {
+        animation: mobilechat__menu 0.3s 1 ease;
+        background: inherit;
+        box-shadow: 0 10px 20px hsla(0, 0%, 50%, 0.4), 0 6px 6px hsla(0, 0%, 50%, 0.4);
+        height: 50vh;
+    }
+    .ChatWindow .Rail .selected {
+        box-shadow: none;
+    }
+    .ChatWindow .Rail h1 {
+        margin: 0;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        z-index: 100;
+    }
+    .ChatWindow .Rail .public {
+        box-sizing: border-box;
+        border-bottom: 1px solid hsla(0, 0%, 50%, 0.4);
+        display: flex;
+        align-items: center;
+        height: 40px;
+        justify-content: center;
+        padding: 3px 13px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .ChatWindow .Rail .public .chevron{
+        display:block!important;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        border:0!important;
+        background:url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_menu_white_36px.svg) no-repeat;
+        width:36px!important;
+        height:36px!important;
+        padding-left:36px!important;
+        top:0!important;
+        left:-2px!important;
+        pointer-events:none
+    }
+    .ChatWindow .Rail .public .wordmark {   
+        padding: 0;
+    }
+    .ChatWindow .Rail .public .splotch,
+    .ChatWindow .PrivateChatList .unread .splotch {
+        background: var(--mc-color-menu);
+        border: none !important;
+        color: var(--mc-color-contrast);
+        font-weight: bold;
+    }
+    .ChatWindow .Rail .public .splotch {
+        height: 15px;
+        justify-content: flex-end;
+        line-height: 16px;
+        min-width: 10px;
+        margin-left: -14px;
+        position: relative;
+        right: initial;
+        transform: translateX(50%);
+        top: 8px;
+    }
+    .ChatWindow .Rail .public:not(.selected) {
+        background: inherit;
+        overflow: hidden;
+    }
+    .ChatWindow .Rail .PrivateChatList,
+    .ChatWindow .Rail h1.private {
+        position: relative;
+        width: 100%;
+    }
+    .ChatWindow .Rail h1.private {
+        background: hsla(0, 0%, 50%, 0.4) !important;
+        border: none !important;
+        font-weight: bold;
+        text-align: left;
+        text-indent: 7px;
+        padding: 7px 0;
+    }
+    .ChatWindow .Rail:not(:hover) .PrivateChatList .unread .splotch {
+        left: 13px;
+        position: fixed;
+        right: initial;
+        top: 13px;
+        z-index: 100;
+    }
+    .ChatWindow .Rail:hover .PrivateChatList .unread .splotch {
+        left: 20px;
+        position: absolute;
+        right: initial;
+        top: 22px;
+    }
+    /**
+     * @section    Chat user menu redesign
+     * @element    #UserStatsMenu
+     */
+    .ChatWindow #UserStatsMenu {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        right: 0 !important;
+        top: 0 !important;
+    }
+    .ChatWindow #UserStatsMenu .actions {
+        margin-right: 5px;
+    }
+    .ChatWindow #UserStatsMenu .actions .regular-actions ~ .regular-actions,
+    .ChatWindow #UserStatsMenu .actions .admin-actions ~ .admin-actions {
+        display: none;
+    }
+    .ChatWindow #UserStatsMenu .actions li,
+    .ChatWindow #UserStatsMenu .regular-actions,
+    .ChatWindow #UserStatsMenu .admin-actions {
+        display: inline-flex;
+    }
+    .ChatWindow #UserStatsMenu .actions li {
+        padding: 5px;
+    }
+    .ChatWindow .UserStatsMenu .actions li a {
+        background: inherit;
+    }
+    .ChatWindow #UserStatsMenu .actions li:hover .label {
+        background: inherit;
+        border-radius: 0 2px;
+        box-shadow: 0 0 1px currentColor;
+        clear: both;
+        display: block;
+        padding: 0 4px;
+        position: absolute;
+        right: 0;
+        top: 46px;
+    }
+    .ChatWindow #UserStatsMenu .actions ul li svg {
+        fill:#fff
+    }
+    .ChatWindow #UserStatsMenu .actions .label,
+    .ChatWindow #UserStatsMenu .actions .give-chat-mod,
+    .ChatWindow #UserStatsMenu .actions .separator {
+        display: none;
+    }
+    .ChatWindow .Rail .UserStatsMenu,
+    .ChatWindow .Rail .User .details,
+    .ChatWindow .UserStatsMenu .info,
+    .ChatWindow .UserStatsMenu .info ul,
+    .ChatWindow .UserStatsMenu .info li {
+        background: rgba(0, 0, 0, 0) !important;
+        border: none;
+        box-shadow: none;
+        display: inline !important;
+        margin: 0;
+        padding: 0;
+    }
+    .ChatWindow .Rail .UserStatsMenu,
+    .ChatWindow .UserStatsMenu .info {
+        color: inherit;
+        font-size: 11px;
+        height: 11px;
+        line-height: 11px;
+        position: static;
+    }
+    .ChatWindow .UserStatsMenu .info .username,
+    .ChatWindow .UserStatsMenu .info .since,
+    .ChatWindow .UserStatsMenu .info .status-message,
+    .ChatWindow .UserStatsMenu .info:after,
+    .ChatWindow .UserStatsMenu .info > img,
+    .ChatWindow #UserStatsMenu .edits {
+        display: none !important;
+    }
+    /**
+     * @section    Chat message pane modifications
+     * @element    #UserStatsMenu
+     */
+    .ChatWindow .Write {
+        height: 46px;
+        position: fixed;
+        width: calc(100% - 60px);
+        z-index: 100;
+    }
+    .ChatWindow .Write img {
+        box-sizing: border-box;
+    }
+    .ChatWindow .Write .message {
+        background: none !important;
+        border: none !important;
+    }
+
+    /**
+     * @section    Chatscript modifications
+     * @element    .chat-toolbar
+     * @element    .modalWrapper
+     */
+    .ChatWindow .Rail .chat-toolbar.wds-button-group {
+        height: auto !important;
+        max-width: initial;
+        overflow-x: auto;
+        overflow-y: visible;
+        padding: 0 !important;
+        position: static !important;
+        width: 100%;
+        background: var(--primary-color-dark-3);
+    }
+    .ChatWindow .Rail .chat-toolbar.wds-button-group:after {
+        border: solid currentColor;
+        border-width: 1px 0;
+        content: '';
+        display: flex;
+        flex: 1;
+        opacity: 0.25;
+    }
+    .ChatWindow .Rail .chat-toolbar.wds-button-group .chat-toolbar__button,
+    .ChatWindow .Rail .chat-toolbar.wds-button-group .chat-toolbar__button:hover {
+        box-sizing: content-box;
+        padding: 7px 12px;
+    }
+    .ChatWindow .modalWrapper {
+        box-sizing: border-box;
+        left: 0 !important;
+        margin: 0 !important;
+        transform: translateY(-50%);
+        top: 50% !important;
+        width: 100% !important;
+    }
+
+    .chat-audio,
+    .chat-image,
+    .chat-soundcloud,
+    .chat-video,
+    .chat-ytvideo {
+        max-width:100%;
+        width:auto
+    }
+
+    .ChatWindow .modal {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #Write {
+        margin-bottom: 5vh;
+    }
+ 
+    .ChatWindow.is-typing .typing-indicator {
+        bottom: -5px !important;
+        left: 10px;
+        font-size: 7.5pt;
+        overflow: hidden;
+    }
+ 
+    .ChatLinkPreview-content {
+        max-width: 90% !important;
+    }
+ 
+    .ChatLinkPreview-content img,
+    .ChatLinkPreview-content iframe {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+@keyframes mobilechat__menu {
+    from { max-height: 40px; }
+    to   { max-height: 50vh; }
+}

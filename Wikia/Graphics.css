@@ -1,0 +1,134 @@
+/** Graphics.css: CSS que realiza adiciones o cambios a recursos gráficos, entre ellos iconos, sprites, logos, etc **/
+
+/* Cambiando el icono de edición (en algunos lugares donde no se usa WDS) */
+.sprite-small.edit,
+.sprite.edit-pencil {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_black_24px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+}
+
+.sprite.edit-pencil {
+    margin-right: 6px;
+}
+
+.UserProfileMasthead .edit-pencil {
+    position: relative;
+    left: 8px;
+}
+
+/* Sprites de WikiActivity */
+.activityfeed-diff:before {
+    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_pageview_white_18px.svg) !important;
+    padding: 5px !important;
+    position: absolute
+}
+
+.activityfeed-diff img {
+    display: none
+}
+
+.sprite.categorization {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_border_color_black_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+#wikiactivity-main .sprite.categorization {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_border_color_white_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+.sprite.new {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_add_circle_black_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+#wikiactivity-main .sprite.new {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_add_circle_white_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+.sprite.edit {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_black_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+#wikiactivity-main .sprite.edit {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_white_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+.sprite.talk {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_18px.svg) center no-repeat !important;
+    background-size: 20px !important;
+    height: 20px !important;
+    width: 20px !important
+}
+
+.sprite-small.delete {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_delete_black_18px.svg) center no-repeat !important;
+    background-size: 15px !important;
+    height: 15px !important;
+    width: 15px !important
+}
+
+.sprite.remove,
+.sprite.trash {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_delete_black_18px.svg) center no-repeat !important;
+    background-size: 15px !important;
+    height: 15px !important;
+    width: 15px !important
+}
+
+.sprite.drag {
+    background: url(https://vignette.wikia.nocookie.net/steven-universe/images/a/a0/Notspritemove.png) center no-repeat !important;
+    background-size: 17px !important;
+    height: 17px !important;
+    width: 17px !important
+}
+
+.sprite.lock {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_lock_white_18px.svg) center no-repeat !important;
+    background-size: 15px !important;
+    height: 15px !important;
+    width: 15px !important
+}
+
+#blackout_WallPreviewModal .wikiaThrobber {
+    background: url(https://images.wikia.nocookie.net/universosteven/es/images/9/96/Res-loader2.svg) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -19px;
+    margin-left: -19px
+}
+
+.ArticlePreview .wikiaThrobber {
+    background: url(https://images.wikia.nocookie.net/universosteven/es/images/9/96/Res-loader2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px
+}
+
+.WikiaRail .loading {
+    background: url(https://images.wikia.nocookie.net/universosteven/es/images/9/96/Res-loader2.svg) no-repeat 50% 50%
+}

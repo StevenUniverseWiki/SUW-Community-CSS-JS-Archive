@@ -1,0 +1,296 @@
+/* Burócratas */
+
+a[href="/es/wiki/Usuario:Water_Pearl"] {
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/d/d3/YellowDiamond_Gemstone.png/revision/latest/scale-to-width-down/14?cb=20190218042002&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+
+a[href$=":Water_Pearl"],
+a[href$="/Water_Pearl"] {
+    color:#ffff33 !important; 
+    font-weight: bold !important;
+}
+
+.Wall .edited-by a.subtle[href$="Muro:Water_Pearl"]:after {
+    color: #ffff33 !important;
+    content: "Burócrata" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+
+}
+
+a[href="/es/wiki/Usuario:Ethereal_Rose"] {
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/1/1d/Gema_de_Diamante_Azul_12x16.png/revision/latest?cb=20190217234935&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+ 
+a[href$=":Ethereal_Rose"],
+a[href$="/Ethereal_Rose"] {
+    color:#00B7F4 !important; 
+    font-weight: bold !important;
+}
+ 
+.Wall .edited-by a.subtle[href$="Muro:Ethereal_Rose"]:after {
+    color: #00B7F4 !important;
+    content: "Burócrata" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+ 
+}
+
+a[href="/es/wiki/Usuario:Ludius_Quassas"] {
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/4/4f/White_Diamond_Gemstone_MS_1.png/revision/latest/scale-to-width-down/14?cb=20190326200447&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+
+a[href$=":Ludius_Quassas"],
+a[href$="/Ludius_Quassas"] {
+    color:#F9F9F9 !important; 
+    font-weight: bold !important;
+}
+ 
+.Wall .edited-by a.subtle[href$="Muro:Ludius_Quassas"]:after {
+    color: #F9F9F9 !important;
+    content: "Burócrata" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+ 
+}
+
+/* Administradores */
+
+a[href="/es/wiki/Usuario:Yellow_Khwatsi"],
+a[href="/es/wiki/Usuario:Left-Handed_Wolf"],
+a[href="/es/wiki/Usuario:Aleksai_Sagir-Lazzuli"]{
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/0/0f/EsmeraldaIcon.png/revision/latest?cb=20190325194339&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+
+a[href$=":Yellow_Khwatsi"],
+a[href$="/Yellow_Khwatsi"],
+a[href$=":Left-Handed_Wolf"],
+a[href$="/Left-Handed_Wolf"],
+a[href$=":Aleksai_Sagir-Lazzuli"],
+a[href$="/Aleksai_Sagir-Lazzuli"]{
+    color:#00D389 !important; 
+    font-weight: bold !important;
+}
+
+.Wall .edited-by a.subtle[href$="Muro:Yellow_Khwatsi"]:after {
+    color: #00D389 !important;
+    content: "Administrador" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+.Wall .edited-by a.subtle[href$="Muro:Left-Handed_Wolf"]:after {
+    color: #00D389 !important;
+    content: "Administrador" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+.Wall .edited-by a.subtle[href$="Muro:Aleksai_Sagir-Lazzuli"]:after {
+    color: #00D389 !important;
+    content: "Administrador" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+/* Moderadores de comentarios */
+
+a[href="/es/wiki/Usuario:The_Nephrite"] {
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/3/32/Gema_de_Nefrita_16x16.png/revision/latest?cb=20190217234936&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+ 
+a[href$=":The_Nephrite"],
+a[href$="/The_Nephrite"] {
+    color:#8BFF7F !important; 
+    font-weight: bold !important;
+}
+ 
+.Wall .edited-by a.subtle[href$="Muro:The_Nephrite"]:after {
+    color: #8BFF7F !important;
+    content: "Moderador de Comentarios" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+/* Moderadores de chat */
+
+a[href="/es/wiki/Usuario:GPL94"],
+a[href="/es/wiki/Usuario:Flutterdash_Lover"],
+a[href="/es/wiki/Usuario:Chico_de_plata152"]
+{
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/a/a8/Gema_de_Topacio_16x16.png/revision/latest?cb=20190217234935&path-prefix=es) center left no-repeat;
+    padding-left: 11px;
+}
+ 
+a[href$=":GPL94"],
+a[href$="/GPL94"],
+a[href$=":Flutterdash_Lover"],
+a[href$="/Flutterdash_Lover"],
+a[href$=":Chico_de_plata152"],
+a[href$="/Chico_de_plata152"] {
+    color: #FFDB70 !important; 
+    font-weight: bold !important;
+}
+ .Wall .edited-by a.subtle[href$="Muro:GPL94"]:after {
+    color: #FFDB70 !important;
+    content: "Moderador de chat y Mentor psicológico";
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+ .Wall .edited-by a.subtle[href$="Muro:Flutterdash_Lover"]:after {
+    color: #FFDB70 !important;
+    content: "Moderador de chat";
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+ .Wall .edited-by a.subtle[href$="Muro:Chico_de_plata152"]:after {
+    color: #FFDB70 !important;
+    content: "Moderador de chat";
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+/* Moderadores temporales de chat */
+
+
+/* Diseñadores */
+
+a[href="/es/wiki/Usuario:TheNozomi"]{
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/c/cd/Bismutogema.png/revision/latest/scale-to-width/14?cb=20160806191905&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+ 
+a[href$=":TheNozomi"],
+a[href$="/TheNozomi"] {
+    color: #44FFE7 !important;
+    font-weight: bold !important;
+}
+ 
+.Wall .edited-by a.subtle[href$="Muro:TheNozomi"]:after{
+    color: #44FFE7 !important;
+    content: "Diseñador/a" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+/* Anfitriones */
+
+a[href="/es/wiki/Usuario:Taxcy_Marsopas1"]{
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/2/23/Gema_de_Diamante_Rosa_16x16.png/revision/latest?cb=20190217234936&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+a[href$=":Taxcy_Marsopas1"],
+a[href$="/Taxcy_Marsopas1"] {
+    color:	#FA5D94  !important; 
+    font-weight: bold !important;
+}
+ 
+.Wall .edited-by a.subtle[href$="Muro:Taxcy_Marsopas1"]:after {
+    color: 	#FA5D94 !important;
+    content: "Anfitrión y Mentor diplomático" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+/* Moderadores de contenido */
+
+a[href="/es/wiki/Usuario:LovelySards"]{
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/d/d4/Gema_de_Hessonite_14x16.png/revision/latest?cb=20190217234936&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+
+
+a[href$=":LovelySards"],
+a[href$="/LovelySards"] {
+    color:#f75e22 !important;
+    font-weight: bold !important;
+}
+ 
+.Wall .edited-by a.subtle[href$="Muro:LovelySards"]:after {
+    color: #f75e22 !important;
+    content: "Moderadora de Contenidos" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+a[href="/es/wiki/Usuario:LovelySards"] {
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/d/d4/Gema_de_Hessonite_14x16.png/revision/latest?cb=20190217234936&path-prefix=es) center left no-repeat;
+    padding-left: 17px;
+}
+
+/* Reversores */
+
+a[href="/es/wiki/Usuario:Uharuchan"] {
+    background: url(https://vignette.wikia.nocookie.net/universosteven/images/1/10/Gema_de_Lapisl%C3%A1zuli_13x16.png/revision/latest?cb=20190217234936&path-prefix=es) center left no-repeat;
+    background-size: contain;
+	padding-left: 17px;
+}
+a[href$=":Uharuchan"],
+a[href$="/Uharuchan"] {
+    color:#1B5DCF !important; 
+    font-weight: bold !important;
+}
+.Wall .edited-by a.subtle[href$="Muro:Uharuchan"]:after {
+    color: #1B5DCF !important;
+    content: "Reversora" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+/* Moderadores de discusiones */
+
+/* Mentor técnico */
+a[href="/es/wiki/Usuario:Rodehi"] {
+      background: url(https://vignette.wikia.nocookie.net/universosteven/images/f/f2/Gema_de_Peridot_15x11.png/revision/latest?cb=20190217234937&path-prefix=es) center left no-repeat; 
+    background-size: contain;
+	padding-left: 17px;
+}
+
+a[href$=":Rodehi"],
+a[href$="/Rodehi"] {
+    color:#3BE633 !important; 
+    font-weight: bold !important;
+}
+.Wall .edited-by a.subtle[href$="Muro:Rodehi"]:after {
+    color: #3BE633 !important;
+    content: "Mentor técnico" !important;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: normal;
+}

@@ -1,0 +1,89 @@
+/* MainPage.css: Estilos que se aplican a la portada */
+
+/* Tarjetas de portada (V1) 
+TODO: Delete when UCP */
+.mainpage-card {
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--rail-module-background-color);
+    width: 100%;
+    float: center;
+    margin-top: 7px;
+    vertical-align: top;
+}
+
+.mainpage-card-header {
+    background-color: var(--primary-color) !important;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+.mainpage-card-title {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: Rubik !important;
+}
+
+.mainpage-card-content {
+    padding: 8px;
+    font-size: 12pt;
+    font-family: Rubik;
+    color: #fff !important;
+}
+
+.mainpage-card-image {
+    padding-top: 4px;
+}
+
+
+/** Tarjetas de portada (V2) **/
+.mainpage-card__container {
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainpage-card__header {
+    background-color: var(--primary-color) !important;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: Rubik !important;
+}
+
+.mainpage-card__content {
+    padding: 8px;
+    font-size: 12pt;
+    font-family: Rubik;
+}
+
+
+/* Galerías slider */
+.mainpage-card .wikiaPhotoGallery-slider-body {
+    width: 100% !important;
+    border: 0 !important;
+}
+
+.mainpage-card .wikiaPhotoGallery-slider-body .horizontal .description,
+.mainpage-card .wikiaPhotoGallery-slider-body .horizontal .description-background,
+.mainpage-card .wikiaPhotoGallery-slider-body .horizontal .nav {
+    transform: translateY(0);
+}
+
+.mainpage-card .wikiaPhotoGallery-slider-body .vertical .description,
+.mainpage-card .wikiaPhotoGallery-slider-body .vertical .description-background,
+.mainpage-card .wikiaPhotoGallery-slider-body .vertical .nav {
+    transform: translateX(0);
+}
+
+.mainpage-card .wikiaPhotoGallery-slider-body .wikiaPhotoGallery-slider-controls .wikiaPhotoGallery-slider-prev {
+    margin-left: 6px;
+    opacity: 1;
+}
+
+.mainpage-card .wikiaPhotoGallery-slider-body .wikiaPhotoGallery-slider-controls .wikiaPhotoGallery-slider-next {
+    margin-right: 6px;
+    opacity: 1;
+}

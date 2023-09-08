@@ -1,0 +1,40 @@
+/* ThemeBase.css: variables del tema y clases utilitarias para su uso en HTML */
+:root {
+    --general-bg: url('https://vignette.wikia.nocookie.net/universosteven/images/1/1a/Bubbled_%2828%29.png/revision/latest?path-prefix=es');
+    --mainpage-bg: url('https://vignette.wikia.nocookie.net/universosteven/images/e/ef/Bubbled_%28166%29.png/revision/latest?path-prefix=es');
+    --social-bg: url('https://vignette.wikia.nocookie.net/universosteven/images/f/ff/Bubbled_%284%29.png/revision/latest?path-prefix=es');
+    --primary-color-dark-3: hsla(227, 57%, 11%, 0.6);
+    --primary-color-dark-2: hsl(228, 56%, 21%);
+    --primary-color-dark-1: hsl(228, 56%, 31%);
+    --primary-color: hsl(241, 43%, 71%);
+    --primary-color-light-1: hsl(237, 62%, 80%);
+    --primary-color-light-2: hsl(237, 62%, 85%);
+    --primary-color-light-3: hsl(237, 62%, 90%);
+    --accent-color: #243a5b;
+    --link-color: var(--primary-color-light-2);
+    --rail-module-background-color: var(--primary-color-dark-2);
+    --rail-module-header-color: var(--primary-color-dark-3);
+    --mainpage-card-header-color: var(--primary-color-dark-2);
+    --page-title-font: 'Dosis', 'Helvetica', 'Arial', sans-serif;
+    --page-content-font: 'Dosis', 'Helvetica', 'Arial', sans-serif;
+    --ui-title-font: 'Rubik', 'Helvetica', 'Arial', sans-serif;
+    --navbox-header-color: var(--primary-color-dark-3);
+    --navbox-group-color: var(--primary-color-dark-2);
+    --content-font-family: Rubik, Helvetica, Open Sans, Helvetica, Arial, sans-serif;
+}
+
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
+
+.fg-primary-color {
+    color: var(--primary-color);
+}
+
+.bg-accent-color {
+    background-color: var(--accent-color);
+}
+
+.fg-accent-color {
+    color: var(--accent-color);
+}

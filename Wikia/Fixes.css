@@ -1,0 +1,38 @@
+/* CSS para reparar errores de visualización, causados ya sea por Wikia o por hojas de estilo externas. */
+
+/** corregir alto del footer de uiFactory.modal (insuficiente con los nuevos botones) **/
+
+.modal > footer {
+    height: 59px !important;
+}
+
+/** alto de botones secundarios **/
+a:not(.wds-button).wikia-button.secondary,
+[class*="button secondary"],
+input[class*="secondary"]:not(.wds-button),
+button[class*="secondary"]:not(.wds-button):not(.wds-sign-out__button),
+.wikia-menu-button.secondary > a,
+.wikia-menu-button.secondary > li > a,
+.secondary:not(.combined) .drop {
+    min-height: 17px;
+    height: 17px;
+    line-height: 18px;
+}
+
+/** Posicionamiento del botón "previsualizar" y "guardar" en el editor **/
+
+.EditPageRail .buttons > #wpSave {
+    width: 48px;
+    right: .5%;
+}
+
+.EditPageRail .buttons > #wpDiff {
+    position: relative;
+    top: 4px;
+    left: 70px;
+    text-transform: uppercase;
+}
+
+.EditPageRail .buttons > .wikia-menu-button > .drop {
+    width: 0px;
+}

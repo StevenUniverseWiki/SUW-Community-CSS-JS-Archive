@@ -1,0 +1,17 @@
+/* Archivos CSS:
+*   MediaWiki:Wikia.css/ThemeBase.css -- variables del tema y clases de utilidad
+*   MediaWiki:Wikia.css/GlobalStyles.css -- estilos globales (fondos, botones, formularios, etc)
+*   MediaWiki:Wikia.css/ContentPages.css -- estilos que aplican a las paginas de contenido y a las plantillas
+*   MediaWiki:Wikia.css/MainPage.css -- estilos de la portada
+*   MediaWiki:Wikia.css/Rail.css -- carril derecho / rail
+*   MediaWiki:Wikia.css/Social.css -- perfiles, muros, blogs
+*   MediaWiki:Wikia.css/Graphics.css -- sprites, iconos y otras imagenes
+*   MediaWiki:Wikia.css/Misc.css -- cualquier otra cosa (?)
+*   MediaWiki:Wikia.css/Highlights.css -- colorcitos
+*   (imports de Dev Wiki y otros sitios)
+*   MediaWiki:Wikia.css/Fixes.css -- css especifico para reparar "bugs" ya sea de fandom o causados por otros css/js
+*/
+
+/* TODO: Make this UCP-ready */
+@import '/es/load.php?mode=articles&only=styles&articles=MediaWiki:Wikia.css/ThemeBase.css|MediaWiki:Wikia.css/GlobalStyles.css|MediaWiki:Wikia.css/ContentPages.css|MediaWiki:Wikia.css/MainPage.css|MediaWiki:Wikia.css/Rail.css|MediaWiki:Wikia.css/Social.css|MediaWiki:Wikia.css/Graphics.css|MediaWiki:Wikia.css/Misc.css|MediaWiki:Wikia.css/Highlights.css|u:dev:MediaWiki:ModernButtons.css|u:dev:MediaWiki:FandomizedTabs/tabbers.css|u:dev:MediaWiki:FandomizedTabs/tabviews.css|u:dev:MediaWiki:EditorSourceMinimal/code.css|u:dev:MediaWiki:EditorVisualMinimal/code.css|u:dev:MediaWiki:InterlanguageFlags/code.css|u:dev:MediaWiki:ModernProfile/Masthead.css|u:dev:MediaWiki:ModernProfile/Wall.css|u:dev:MediaWiki:ModernLeaderboard.css';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Dosis:wght@400;700;800&family=Inter:wght@400;700&family=Open+Sans&family=Roboto&display=swap');

@@ -1,0 +1,153 @@
+/** Rail.css: Estilos para los módulos de la columna derecha **/
+.module,
+.rail-module {
+    font-family: var(--ui-title-font) !important;
+}
+
+.WikiaRail .rail-module {
+    background-color: var(--rail-module-header-color) !important;
+    border-radius: 5px;
+    padding: 0 6px 10px 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rail-module:not(.discord-module) h2,
+.rail-module .mw-headline,
+.discussions-rail-theme .embeddable-discussions-heading {
+    background-color: var(--primary-color-dark-3) !important;
+    border: 0;
+    margin: 0 -6px 16px -6px;
+    border-radius: 5px 5px 0 0;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Rubik;
+    text-transform: uppercase;
+}
+
+/* activity feed */
+.activityfeed .subtle {
+    color: #fff;
+}
+
+/* Discord Module */
+.discord-widget-container {
+    height: auto !important;
+}
+
+.discord-module {
+    padding: 0 !important;
+}
+
+.discord-widget .widget-body {
+    display: none;
+}
+
+.discord-module>.title-container {
+    display: none;
+}
+
+.discord-module .widget-header {
+    background-color: var(--rail-module-header-color) !important;
+    padding-left: 12px;
+}
+
+.discord-module .widget-footer {
+    background-color: transparent !important;
+    text-align: center !important;
+}
+
+.discord-widget .widget-role-name {
+    display: none !important;
+}
+
+.discord-widget .widget-btn-connect {
+    font-weight: 650;
+    text-transform: uppercase;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 11px;
+}
+
+/** discussion module **/
+.discussions-rail-theme .embeddable-discussions-heading {
+    border-bottom: 0 !important;
+}
+
+.discussions-rail-theme .embeddable-discussions-heading:before {
+    margin-left: 12px
+}
+
+body:not(.mainpage) .WikiaBlogListingBox .WikiaBlogListingPost h2 {
+    background-color: transparent !important;
+    padding: 0px !important;
+    margin-left: 0;
+}
+
+.skin-oasis .WikiaRail .WikiaBlogListingBox .WikiaBlogListingPost .author-details {
+    margin-left: 50px;
+}
+
+.skin-oasis .WikiaRail .WikiaBlogListingBox>ul {
+    margin: 12px 0 0;
+}
+
+/** New images module **/
+.photo-module {
+	padding-bottom: 24px !important;
+}
+
+.photo-module > a {
+	position: relative;
+	right: 4px;
+}
+
+.photo-module > .photo-stats a {
+	max-width: 69px !important;
+}
+
+.photo-module > .photo-stats > .tally {
+	position: relative;
+	top: 8px;
+}
+
+.photo-module > .photo-stats > .tally > span {
+	margin-left: 5px;
+}
+
+.photo-module .pm-carousel-item img {
+    max-width: 48px !important;
+	object-fit: contain;
+}
+
+/** Módulos del wiki **/
+.rail-module > .wiki-module {
+	padding-bottom: 10px;
+}
+ 
+.rail-module > .wiki-module .title {
+	margin-bottom: 10px;
+}
+ 
+.rail-module > .wiki-module > .module-content {
+	padding-left: 5px;
+}
+ 
+.rail-module > .wiki-module > .module-content ul {
+	list-style-type: square;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ 
+.rail-module > .wiki-module > .module-content .action {
+	margin-top: 10px;
+}
+ 
+.rail-module > .wiki-module .wds-button {
+	cursor: pointer;
+}
+ 
+/** ocultar new-users-promote-module a usuarios registrados **/
+.user-logged .railModule:first-child {
+	display: none;
+}

@@ -1,0 +1,806 @@
+@import '/es/load.php?mode=articles&only=styles&articles=MediaWiki:Chat.css/Highlights.css';
+
+:root {
+    --page-background-image: url('https://vignette.wikia.nocookie.net/test15119705713503/images/a/a9/Blur.jpg/revision/latest?cb=20200401233657&path-prefix=es');
+    --chat-background-image: url('https://vignette.wikia.nocookie.net/steven-universe/images/5/5f/Same_Old_World_101.png/revision/latest?cb=20160617181335');
+}
+
+/** Page **/ 
+.ChatWindow {
+    background-image: var(--page-background-image);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/** Chat container **/
+.WikiaPage {
+    top: 58px !important;
+    background-image: var(--chat-background-image) !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #3B3838 !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    border: none !important;
+}
+
+@supports (background-blend-mode: overlay) {
+    .WikiaPage {
+        background-blend-mode: overlay;
+    }
+    .Chat {
+        background: transparent !important;
+    }
+}
+
+/** Chat header **/
+.ChatHeader {
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 48px;
+}
+
+.ChatHeader > h1 {
+    border-top-left-radius: 0.5rem;
+    line-height: 45px;
+    margin-right: 200px;
+    background: transparent;
+}
+
+.ChatHeader > h1.private {
+    font-family: 'Inter';
+    margin-top: 1%;
+    margin-left: 0.5rem;
+    user-select: none;
+}
+
+.ChatHeader > .wordmark > a > img {
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+}
+
+.Chat, .Write {
+    right: 200px;
+}
+
+/*** Toolbar ***/
+.chat-toolbar {
+    right: 204px !important;
+    padding-top: 4px !important;
+}
+
+.chat-toolbar .wds-button {
+    border: none !important;
+    margin-right: 0.5em !important;
+    background-color: var(--primary-color);
+    color: #fff !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    border-radius: 2px !important;
+    opacity: 0.8 !important;
+    height: 28px !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-toolbar .wds-button:hover {
+    opacity: 1 !important;
+}
+
+.chat-toolbar .wds-button:not(:first-child) {
+    margin-left: 0.4rem !important;
+}
+
+.chat-toolbar .wds-dropdown__toggle {
+    border-radius: 2px !important;
+    background-color: var(--primary-color) !important
+}
+
+.chat-toolbar > .wds-button[data-name="ExtendedPrivateMessaging"],
+.chat-toolbar > .wds-button[data-name="Pings"],
+.chat-toolbar > .wds-button.ui-button-rules {
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent !important;
+    width: 28px;
+    overflow: hidden;
+    user-select: none;    
+}
+
+.chat-toolbar > .wds-button[data-name="Pings"] {
+    background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg');
+    order: 1;  
+}
+
+.chat-toolbar > .wds-button[data-name="ExtendedPrivateMessaging"] {
+    background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_people_white_24px.svg');
+    order: 2;
+}
+
+
+.chat-toolbar > .wds-button.ui-button-rules {
+    background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_assignment_white_24px.svg');
+    order: 3;
+}
+
+/*** User menu ***/
+.ChatHeader > .User {
+    padding-left: 0;
+    width: 195px;
+    border: none;
+    border-top-right-radius: 0.5rem;
+    background-color: var(--primary-color);
+    height: 45px;
+    top: 0;
+}
+
+.ChatHeader > .User > img {
+    width: 28px;
+    height: auto;
+    top: 5px;
+}
+
+.ChatHeader > .User > .username {
+    font-size: 11pt;
+    font-family: 'Inter';
+    margin-left: 2.6rem !important;
+    margin-top: 0.6rem;
+}
+
+.ChatHeader > .User.has-status > .username {
+    margin-top: 0.05rem;
+}
+
+.ChatHeader > .User > .username > .badge {
+    display: none;
+}
+
+.ChatHeader > .User > .details {
+    margin-left: 2.6rem;
+}
+
+.ChatHeader > .User > .details > .status {
+    margin-top: -19px;
+    margin-left: -20px !important;
+    cursor: pointer;
+}
+
+.ChatHeader > .User.has-status > .details > .status {
+    margin-top: -10px;
+}
+
+.ChatHeader > .User > .details > .status-message {
+    font-family: 'Inter';
+    margin-left: 3px;
+    margin-right: 46px;
+}
+
+
+/** Chat box **/
+.Chat {
+    background: rgba(20, 23, 42, 0.45) !important;
+    border: none;
+    box-shadow: none !important;
+    margin-bottom: 1.2rem;
+}
+
+.Chat > ul > li {
+    font-size: 11.2pt;
+    font-family: 'Inter';
+}
+
+.Chat > ul > li > .username {
+    font-size: 12pt;
+    font-family: 'Inter';
+}
+
+.Chat > ul > li > .username:after {
+    display: none;
+}
+
+.Chat > ul > .you {
+    background: transparent;
+}
+
+.Chat > ul > li img[width="19"] { /* Emoticon resizing */
+    max-width: 25px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+}
+
+
+/* Announcements */
+.inline-alert {
+    font-weight: 400!important;
+    font-size: 110%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px!important;
+    padding-top: 10px!important;
+    margin-bottom: 10px!important;
+    color: #fff !important;
+}
+
+.inline-alert:first-child {
+    margin-top: 10px;
+}
+
+.inline-alert:after,
+.inline-alert:before {
+    display: none!important
+}
+
+.continued.inline-alert {
+    margin-top: 10px!important;
+    top: 0
+}
+
+/** Right rail **/
+.Rail {
+    width: 200px;
+    background: rgba(20, 23, 42, 0.6) !important;
+    text-overflow: ellipsis;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+#Rail {
+    transition: width .5s cubic-bezier(.2, .49, 0, 1.01) !important;
+}
+
+.Rail > h1 {
+    white-space: nowrap;
+    text-overflow: clip
+}
+
+.Rail.closed {
+    width: 0;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 #000;
+}
+
+.Rail > .wordmark {
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 0;
+    padding-bottom: 8px;
+}
+
+.Rail img.wordmark {
+    position: relative;
+    right: 0.5em;
+}
+
+.Rail .wordmark.selected {
+    background: var(--primary-color-dark-2);
+}
+
+#Rail .private {
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10.5pt;
+    background-image: none !important;
+    background-color: var(--primary-color-dark-2);
+    height: 20px;
+}
+
+.Rail > ul > .User {
+    margin: 0 0 8px 0;
+    padding: 8px 2px 8px 37px;
+    display: block !important;
+}
+
+.Rail > ul > .User .username {
+    position: relative;
+    top: 5px !important;
+    margin-left: 8px;
+    font-size: 11pt;
+    font-family: 'Inter';
+}
+
+.Rail > ul > .User .username:after {
+    top: 1px !important;
+    right: -1px !important;
+}
+
+.Rail > ul > .User .badge {
+    margin-top: -5px;
+}
+
+.User .username .badge > #wds-avatar-badges-admin,
+.User .username .badge > #wds-avatar-badges-discussion-moderator {
+    display: none
+}
+
+.Rail > ul > .User img {
+    width: 28px;
+    height: auto;
+    border: 0 !important;
+    border-radius: 50% !important;
+}
+
+.Rail > ul > .User .status {
+    margin-top: -1px;
+    margin-left: -15px;
+}
+
+.Rail > ul > .User.has-status .username {
+    top: 0 !important;
+}
+
+.Rail > ul > .User.has-status .username:after {
+    top: 4px !important;
+    right: -2px !important;
+}
+
+.Rail > ul > .User.has-status .status {
+    margin-top: -11px;
+}
+
+.Rail > ul > .User.has-status .status-message {
+    display: block;
+    margin-left: 8px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.Rail .selected {
+    box-shadow: none;
+    background-color: var(--primary-color-dark-2);
+}
+
+/* Status icons */
+.status {
+    letter-spacing: -4px;
+    background-color: #43b581 !important;
+    padding: 2px;
+    border-radius: 50%;
+    color: transparent;
+    border: 2px solid #2f3136;
+    display: block !important;
+    height: 6px;
+    width: 6px;
+
+    z-index: 1;
+    position: relative;
+    user-select: none;
+}
+
+.away .status {
+    background-color: #faa61a !important;
+    z-index: 9999999999;
+    position: relative;
+}
+
+/** User popup **/
+.UserStatsMenu {
+    width: 16em;
+    border: none;
+    border-radius: 4px !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    font-family: 'Inter'
+}
+
+.UserStatsMenu > .info {
+    border: none;
+    border-radius: 4px 4px 0 0 !important;
+    text-align: center;
+    display: block;
+}
+
+.UserStatsMenu > .info img {
+    float: none;
+    border-radius: 50%;
+}
+
+.UserStatsMenu .info ul {
+    margin: 0;
+}
+
+.UserStatsMenu .status-message {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    text-align: center;
+    margin-top: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 6px !important;
+    border-bottom: 0.4px solid var(--primary-color-light-2);
+}
+
+.User.has-status .status-message {
+    display: block;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.UserStatsMenu .info ul > .edits,
+.UserStatsMenu .info ul > .since {
+    text-align: left;
+    margin-left: 3%;
+}
+
+.UserStatsMenu .actions li > a, .UserStatsMenu .actions li {
+    color: var(--link-color) !important;
+    font-weight: bold !important
+}
+
+.UserStatsMenu .admin-actions {
+    margin-top: 6px;
+    margin-bottom: 8px
+}
+
+.UserStatsMenu .admin-actions li:first-child {
+    margin-bottom: 4px
+}
+
+.UserStatsMenu .admin-actions li .label {
+    color: #f44336 !important;
+}
+
+.UserStatsMenu .admin-actions li svg {
+    fill: #d32f2f;
+}
+
+
+/** Write area **/
+.Write {
+    bottom: 20px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.Write > img {
+    display: none;
+}
+
+.Write > input {
+    display: none !important; /* Hide "submit form" button*/
+}
+
+.Write > input + #ChatSendButton {
+    position: absolute;
+    bottom: 3px;
+    right: 0.75em;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_send_white_24px.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    color: transparent !important;
+    min-width: 1px;
+    padding: 0;
+    width: 3.2em !important;
+    height: 3.2em !important;
+    user-select: none;
+}
+
+/*** Message textarea ***/
+.Write > .message {
+    border: 0 !important;;
+    width: calc(100% - 46px);
+    background-color: var(--primary-color-dark-2);
+    backdrop-filter: blur(3px);
+    border-radius: 0.5rem;
+    padding: 0;
+    padding-left: 0.4rem;
+    padding-top: 0.2rem;
+}
+
+.Write > .message > .emoji-picker-button {
+    position: absolute;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    color: transparent;
+    overflow: hidden;
+    user-select: none;
+    background-color: transparent;
+    margin-top: 5px;
+    border: none;
+    background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_insert_emoticon_white_24px.svg') !important;;
+    background-position: center;
+}
+
+.Write textarea[name="message"] {
+    margin-left: 30px;
+    font-size: 11pt;
+    font-family: 'Inter';
+    color: var(--primary-color);
+    text-shadow: 0 0 0 #fff;
+    -webkit-text-fill-color: transparent;
+    width: calc(100% - 34px);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    text-shadow: none;
+    -webkit-text-fill-color: initial
+}
+
+
+
+.emoji-picker-button {
+    position: absolute;
+}
+
+
+/* Extension buttons */
+span.toggle-chat-rail {
+    position: absolute;
+    right: 4px;
+    top: 1px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    color: transparent !important;
+    background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_menu_white_36px.svg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+
+.Chat.closed {
+    right: -1px
+}
+#Write.closed {
+    right: 10px
+}
+
+
+#ChatHeader .private {
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 150px
+}
+
+.Chat .message {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block
+}
+
+.chevron {
+    display: none!important
+}
+
+.Rail .splotch,
+.toggle-chat-rail .unread-indicator {
+    background-color: #f73839;
+    background-image: none;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Inter';
+    font-size: 9pt;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    user-select: none;
+    display: none;
+}
+
+.Rail .splotch {
+    right: 6px;
+}
+
+.PrivateChatList .splotch {
+    top: 14px;
+}
+
+.toggle-chat-rail .unread-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.toggle-chat-rail .unread-indicator.unread {
+    display: block;
+}
+
+body .typing-indicator {
+  display: none;
+}
+
+body.is-typing .typing-indicator {
+     display: inline-block !important;
+     color: #fff !important;
+     margin-top: 10px;
+     position: absolute;
+     bottom: 7px;
+     left: 2rem;
+     right: 2rem;
+     font-size: 12px;
+    font-family: 'Inter'
+}
+
+.typing-indicator:before {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/d/dd/Res-ajax_loader.svg/revision/latest?path-prefix=es);
+    padding-right: 4px;
+    vertical-align: -70%;
+}
+
+.typing-indicator .username {
+ font-weight: bold
+}
+
+#Rail #chatOptionsButton,
+#Write a.wikia-button,
+h1.wordmark #pingspan {
+    display: none !important
+}
+
+/* Modals */
+.modal {
+    background-color: var(--primary-color-dark-3) !important;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    font-family: 'Inter';
+}
+
+.modal > header {
+    font-weight: 800;
+    font-family: 'Inter';
+}
+
+.custom-chat-status-main > .status-message {
+    width: 90%;
+    margin-top: 8px;
+}
+
+#blackout_custom-chat-status {
+    pointer-events: none;
+}
+
+.custom-chat-status {
+    pointer-events: auto;
+}
+
+#blackout_PingsInvalidSettingsModal.visible {
+    z-index: 9999999;
+}
+
+.ChatWindow #ui-modal-rules {
+    max-width: 90%;
+}
+
+.ChatWindow #ui-modal-rules > section {
+    padding-top: 2px !important;
+}
+
+.ChatWindow #ui-modal-rules .ui-modal-rules-main {
+    font-size: 10.5pt;
+}
+
+.ChatWindow #ui-modal-rules .ui-modal-rules-main ul > li {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.ChatWindow #ui-modal-rules .ui-modal-rules-main ol > li {
+    list-style-position: inside;
+    list-style-type: decimal
+}
+
+.ChatWindow #ui-modal-rules .ui-modal-rules-main h2 {
+    color: #000;
+    text-decoration: underline;
+}
+
+.ChatWindow #ui-modal-rules .ui-modal-rules-main li {
+    margin-left: 1em;
+    line-height: 1.5em;
+}
+
+.ChatWindow #ui-modal-rules .ui-modal-rules-main b {
+    font-weight: bold; /* wikia u did this to me */
+}
+
+.Rail li[data-user] .username:after {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    line-height: 18px;
+    display: block
+}
+
+a {
+    color: var(--link-color) !important
+}
+
+.EmoticonsWindowIcon {
+    margin: 4px;
+}
+
+.EmoticonsWindowIcon:hover {
+    background: var(--primary-color) !important
+}
+
+.chat-video {
+    max-width: 512px;
+    max-height: 288px;
+    width: auto;
+    height: auto;
+    object-fit: cover
+}
+
+/** Mobile **/
+.mobile .ChatHeader {
+    margin: 0;
+    border-radius: 0;
+}
+
+.mobile .ChatHeader .wordmark img {
+  display: block;
+  box-sizing: border-box;
+  background: url('https://vignette.wikia.nocookie.net/universosteven/images/b/bc/Wiki.png/revision/latest/scale-to-width-down/30?cb=20170204034951&path-prefix=es') no-repeat;
+  width: 0px;
+  padding-left: 110px;
+}
+
+.mobile .ChatHeader .chat-toolbar {
+    right: 178px !important;
+}
+
+.mobile .ChatHeader .User {
+    border-radius: 0;
+    width: 170px;
+}
+
+.mobile .Rail {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.mobile .Rail:not(.closed) {
+    width: 175px;
+}
+
+.mobile .ChatHeader .private {
+    font-size: 3.5vw !important;
+    white-space: normal !important;
+}
+
+.mobile .WikiaPage {
+    top: 48px !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.mobile .Chat {
+    right: -1px
+}
+
+.mobile #Write {
+    right: 0
+}
+
+.mobile .Write > .message {
+    width: calc(100% - 44px);
+
+}
+
+.mobile .Write > input + #ChatSendButton {
+    right: 0.75em;
+}
+
+.mobile .modal {
+    margin-left: 2%;
+    margin-right: 2%;
+}

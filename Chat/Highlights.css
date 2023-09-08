@@ -1,0 +1,125 @@
+/* Gemas */
+/* Burócratas */
+li[data-user="Water Pearl"] .username{
+    color:#ffff33;
+    font-weight: bold;
+}
+
+li[data-user="Water Pearl"] .username:after{
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/d/d3/YellowDiamond_Gemstone.png/revision/latest/scale-to-width-down/14?cb=20190218042002&path-prefix=es);
+}
+
+li[data-user="Ethereal Rose"] .username{
+    color:#00B7F4;
+    font-weight: bold;
+}
+ 
+li[data-user="Ethereal Rose"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/1/1d/Gema_de_Diamante_Azul_12x16.png/revision/latest?cb=20190217234935&path-prefix=es);
+}
+
+li[data-user="Ludius Quassas"] .username {
+    color: #F9F9F9;
+    font-weight: bold;
+}
+
+li[data-user="Ludius Quassas"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/4/4f/White_Diamond_Gemstone_MS_1.png/revision/latest/scale-to-width-down/14?cb=20190326200447&path-prefix=es);
+}
+
+/* Administradores */
+li[data-user="Yellow Khwatsi"] .username,
+li[data-user="Aleksai Sagir-Lazzuli"] .username{
+    color:#00D389;
+    font-weight: bold;
+}
+
+li[data-user="Yellow Khwatsi"] .username:after,
+li[data-user="Aleksai Sagir-Lazzuli"] .username:after{
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/0/0f/EsmeraldaIcon.png/revision/latest?cb=20190325194339&path-prefix=es);
+}
+
+/* Moderadores de chat */
+li[data-user="GPL94"] .username,
+li[data-user="Flutterdash Lover"] .username,
+li[data-user="Chico de plata152"] .username{
+    color: #FFDB70;
+    font-weight: bold;
+}
+
+li[data-user="GPL94"] .username:after,
+li[data-user="Flutterdash Lover"] .username:after,
+li[data-user="Chico de plata152"] .username:after{
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/a/a8/Gema_de_Topacio_16x16.png/revision/latest?cb=20190217234935&path-prefix=es);    
+}
+
+/* Moderadores temporales de chat */
+
+
+/* Reversores */
+li[data-user="Uharuchan"] .username {
+    color:#1B5DCF;
+    font-weight: bold;
+}
+
+li[data-user="Uharuchan"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/1/10/Gema_de_Lapisl%C3%A1zuli_13x16.png/revision/latest?cb=20190217234936&path-prefix=es);
+}
+
+
+/* Anfitriones */
+li[data-user="Taxcy Marsopas1"] .username, 
+li[data-user="Weats"] .username {
+    color:#FA5D94;
+    font-weight: bold;
+}
+
+li[data-user="Taxcy Marsopas1"] .username:after,
+li[data-user="Weats"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/2/23/Gema_de_Diamante_Rosa_16x16.png/revision/latest?cb=20190217234936&path-prefix=es);
+}
+
+/* Mentores */
+li[data-user="Rodehi"] .username {
+    color:#3BE633;
+    font-weight: bold;
+}
+
+li[data-user="Rodehi"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/f/f2/Gema_de_Peridot_15x11.png/revision/latest?cb=20190217234937&path-prefix=es);
+} 
+
+
+/* Diseñador */
+
+li[data-user="TheNozomi"] .username {
+    color: #44FFE7;
+    font-weight: bold;
+}
+
+li[data-user="TheNozomi"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/b/b4/Gema_de_Bismuto_16x16.png/revision/latest?cb=20190217234936&path-prefix=es);
+}
+
+
+/* Moderadores de comentarios */
+li[data-user="The Nephrite"]  .username {
+    color:#8BFF7F;
+    font-weight: bold;
+}
+ 
+li[data-user="The Nephrite"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/3/32/Gema_de_Nefrita_16x16.png/revision/latest?cb=20190217234936&path-prefix=es);
+}
+  /* Moderadores de contenido */
+li[data-user="LovelySards"] .username {
+    color:#f75e22;
+    font-weight: bold;
+ 
+ }
+ 
+li[data-user="LovelySards"] .username:after {
+    content: url(https://vignette.wikia.nocookie.net/universosteven/images/d/d4/Gema_de_Hessonite_14x16.png/revision/latest?cb=20190217234936&path-prefix=es);
+}
+
+/* Moderadores de Discusiones */

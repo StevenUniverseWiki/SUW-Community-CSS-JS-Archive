@@ -1,0 +1,126 @@
+/* GlobalStyles.css: Estilos globales que afectan a toda la página, por ejemplo, fondos, fuentes globales, encabezados, botones y otros elementos de la interfaz. */
+
+/*======================================*/
+/*                  Fondos              */
+/*======================================*/
+
+/* Fondo general */
+body.mediawiki {
+    background-image: var(--general-bg) !important;
+    background-attachment: fixed !important;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Fondos específicos para otras áreas */
+body.ns-2 /* Usuario */,
+body.ns-3 /* Usuario discusión */,
+body.ns-1200 /* Muro */,
+body.ns-1201 /* Hilo */ {
+    background-image: var(--social-bg) !important;
+}
+
+body.mainpage {
+    background-image: var(--mainpage-bg) !important;
+}
+
+/* Fandom u did this to me */
+body.background-dynamic.skin-oasis::after,
+body.background-dynamic.skin-oasis::before {
+	background-image: none !important;
+}
+
+body.background-dynamic.skin-oasis .background-image-gradient {
+	display: none !important;
+}
+
+/*======================================*/
+/* Estilos para el contenedor del sitio */
+/*======================================*/
+.WikiaPageBackground {
+    background: hsl(228, 56%, 11%) !important;
+    opacity: .51 !important;
+}
+
+.WikiaPage {
+    border: 0;
+}
+
+/* Fuente de los encabezados */
+.page-header__title {
+    font-family: var(--page-title-font) !important;
+    font-weight: 800 !important;
+    font-variant: small-caps;
+}
+
+.WikiaArticle h2,
+.WikiaArticle h3,
+.WikiaArticle h4 {
+    font-family: var(--page-title-font) !important;
+    font-weight: 700 !important;
+}
+
+/* !Temporary hack! */
+.wds-community-header {
+	background-image: url('https://vignette.wikia.nocookie.net/universosteven/images/0/0e/Community-header-background/revision/latest?cb=20200820122612&path-prefix=es') !important;
+}
+
+/* Scrollbars (WebKit/Chromium) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color-dark-3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color-light-2);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color-light-1);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--primary-color-dark-1);
+}
+
+/* Scrollbars (Gecko) */
+* {
+    scrollbar-color: var(--primary-color-light-2) var(--primary-color-dark-3);
+    scrollbar-width: thin;
+}
+
+/** Barra de herramientas **/
+.WikiaBarWrapper {
+    background-image: none !important;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+/** estilos del boton "volver arriba" **/
+#backtotop button {
+    position: relative !important;
+    right: 10px !important;
+    height: 25px !important;
+    font-size: 11px !important;
+    line-height: 25px !important;
+    background: none !important;
+    box-shadow: none;
+    top: -8px;
+    color: #fff;
+}
+
+#backtotop button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: solid #78909C;
+    border-width: 0 1px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px;
+}

@@ -1,0 +1,235 @@
+/* Misc.css: código que no tiene lugar en otros archivos; mayormente CSS que afecta la apariencia de extensiones */
+
+/** Embeds de youtube usando el 100% del ancho de la página **/
+.youtubeplayer.fullwidth>iframe {
+    width: 100% !important;
+}
+
+.header-column.header-title>h1 {
+    color: white;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 30px;
+}
+
+.tabs li a,
+ul.tabbernav li a,
+ul.tabbernav li a:link,
+ul.tabbernav li a:visited {
+    background-image: none !important;
+}
+
+.tabs .selected a,
+.tabs .selected a:hover,
+ul.tabbernav li.tabberactive a,
+ul.tabbernav li.tabberactive a:hover {
+    background-image: none !important;
+}
+
+ul.tabbernav li a:hover,
+.tabs li a:hover {
+    background-image: none !important;
+}
+
+ul.tabbernav {
+    border: none !important;
+}
+
+#AccountNavigation .account-navigation-item .links-container a {
+    background: none !important;
+    padding-left: 0 !important;
+}
+
+#quickdiff-modal>footer a {
+    text-transform: capitalize
+}
+
+#quickdiff-modal .diff-header .mw-rollback-link {
+    display: none
+}
+
+body.ns-2 .ChatModule,
+body.ns-2 .UserProfileAchievementsModule,
+body.ns-2 .wds-global-footer,
+body.ns-2 #WikiaFooter,
+body.ns-2 .UserProfileMasthead,
+body.ns-2 .UserProfileActionButton .wikia-menu-button,
+body.ns-2 .tabs-container .tabs li {
+    z-index: 20;
+}
+
+.infobox-audio-player audio {
+    width: 273px
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 1px dotted white;
+}
+
+.tooltip:hover {
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hovernav img {
+    opacity: 0.60;
+    filter: alpha(opacity=60);
+    transition: 0.3s;
+}
+
+.hovernav img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+/* Tabla de MediaWiki:Emoticons */
+.emoticons {
+    width: 98%;
+}
+
+.page-MediaWiki_Emoticons .table-is-wide::before {
+    box-shadow: 0 !important;
+}
+
+.emoticons::before {
+    box-shadow: 0 0 0 !important;
+}
+
+.emoticons td {
+    vertical-align: top;
+}
+
+.emoticons ul {
+    list-style: none;
+    margin: 0;
+    max-width: 104px;
+    text-align: center;
+}
+
+.emoticons ul li img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+/* Checkbox de "actualización automática" en RWA */
+input#ajaxToggle {
+    -webkit-appearance: none;
+    position: relative;
+    outline: none !important;
+    width: 24px;
+    height: 12px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+input#ajaxToggle:before {
+    content: '';
+    background-color: #9da6af;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 14px;
+    margin: 0;
+    border-radius: 7px;
+    transition: background-color 0.1s ease;
+}
+
+input#ajaxToggle:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    transition: left 0.1s ease-in-out, right 0.1s ease-in-out;
+}
+
+input#ajaxToggle:checked:before {
+    background: #1976d2;
+}
+
+input#ajaxToggle:checked:after {
+    right: 2px;
+    left: 12px;
+}
+
+input#ajaxToggle:focus:before {
+    outline: none;
+    box-shadow: 0 0 5px #529ecc;
+}
+
+input#ajaxToggle:active:after {
+    opacity: 0.8;
+}
+
+span#ajaxLoadProgress {
+    position: relative;
+    left: 4px;
+}
+
+span#ajaxLoadProgress img {
+    position: absolute;
+    top: -10px;
+}
+
+/* Fix a los módulos de chat/páginas seguidas */
+/** TODO: investigar si es necesario esto??? **/
+.chat-module,
+.FollowedPagesModule {
+    position: relative;
+    z-index: 180;
+}
+
+/* Tamaño mínimo de widgets de YT y SoundCloud */
+.youtubeplayer iframe {
+    min-width: 256px;
+    min-height: 144px;
+}
+
+iframe[data-wikia-widget="soundcloud"] {
+    min-width: 200px;
+    min-height: 100px;
+}
+
+/* Medals */
+body.page-Steven_Universe_Wiki_Medals .mw-content-text > p {
+    display: none;
+}
